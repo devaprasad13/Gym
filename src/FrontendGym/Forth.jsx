@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gym.css'; // Custom CSS for the component
 import bg from '../Image/v1.mp4'
+import cg from '../Image/v2.mp4'
 const SuccessStories = () => {
   return (
     <div className="li">
@@ -24,8 +25,8 @@ const SuccessStories = () => {
           </div> */}
         </div>
         <div className="video-card">
-          <video width="300" height="200" controls>
-            <source src="/path-to-alex-video.mp4" type="video/mp4" />
+          <video width="300" height="200" autoPlay loop muted>
+            <source src={cg} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* <div className="overlay">
